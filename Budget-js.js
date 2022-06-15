@@ -3,14 +3,11 @@ var balance = 0;
 document.getElementById("Add_Income").addEventListener("click", Calc_Inc);
 document.getElementById("Add_Expence").addEventListener("click", Calc_Exp);
 
-var hist_Count= 0;
-
 var total_Income = 0;
 var total_Expence = 0;
 
 
 class err_msg{
-	
 			
 		// error messages
 		Balance_Err(){
@@ -41,7 +38,8 @@ class income_class{
 		}
 		
 		add_amt(amount){
-			this.amt += amount;		
+			this.amt += amount;
+			balance += amount;		
 		}
 		
 		
@@ -67,7 +65,27 @@ class expense_class{
 
 class history_table{
 	
+	private hist_Count =0;
+	
+	create_new_row(){
+		
+          // update history
+          this.hist_Count += 1;
+          var table = document.getElementById("hist-table");
+          var row = table.insertRow(hist_Count);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          var cell6 = row.insertCell(5);
+	}
+	
+	
 }
+
+//history table object
+var hist_table = new history_table;
 
 // income variables
 var salary = new income_class("Salary");
@@ -161,6 +179,8 @@ function Calc_Inc(){
 
           inc_amt = parseInt(inc_amt);
           balance += inc_amt;
+          
+          history_table.create_new_row();
 
           total_Income += inc_amt;
 
@@ -172,16 +192,7 @@ function Calc_Inc(){
           var time = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 
 
-          // update history
-          hist_Count += 1;
-          var table = document.getElementById("hist-table");
-          var row = table.insertRow(hist_Count);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-          var cell3 = row.insertCell(2);
-          var cell4 = row.insertCell(3);
-          var cell5 = row.insertCell(4);
-          var cell6 = row.insertCell(5);
+				
 
           cell1.innerHTML = "Income";
           cell2.innerHTML = inc_mode;
