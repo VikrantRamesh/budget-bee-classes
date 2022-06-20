@@ -1,0 +1,108 @@
+/* all the fonts in our website is montserrat font */
+body{
+  font-family: 'Kanit', "Montserrat";
+	background: linear-gradient(180deg, #eec33d, #C58F00 );
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+    font-family: 'Kanit', "Montserrat";
+}
+
+/*Used for general headings in the website*/
+h2{
+  font-family: 'Kanit', "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  line-height:1.5;
+}
+
+/* used for smaller sub-headings below h2 */
+
+h3{
+  font-weight:500;
+  font-size: 1.5rem;
+  line-height:1.5;
+}
+
+/* plain text in the website below h3 */
+h4{
+  font-weight:300;
+  font-size: 1.4rem;
+  line-height:1;
+}
+
+
+
+
+/* navbar */
+.navbar-brand{
+  font-size: 4rem;
+  font-family: 'Mountains of Christmas', cursive;
+	font-weight: bold;
+	padding: 0.5rem;
+
+}
+
+.navbar{
+  padding: 0.5% 2% 0 5%;
+}
+.nav-item{
+    font-size: 2rem;
+    padding: 0 2rem 0 0 ;
+    font-weight: 500;
+}
+
+#NavBar{
+  /*background-image: url("../Images/Main_Page_Welcome_img.jpg");*/
+  /*background: linear-gradient(50deg, #eec33d, #AF8057 );*/
+  /*background-color: #ea9d3e;*/
+  background-repeat: no-repeat;
+}
+
+#common-bg-color{
+	background: linear-gradient(180deg, #eec33d, #AF8057 );
+	margin: 0;
+	padding: 0;
+}
+
+.bee-img-div{
+	width: 10%;
+}
+
+.bee-img{
+	width: 40%;
+}
+
+.title-color{
+		color: #312f17 !important;
+    padding-top:1.5%;
+}
+
+
+
+
+
+
+/* fonts */
+.ubuntu-font{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Lalezar-font{
+  font-family: 'Lalezar', cursive;
+  font-weight: 300;
+}
+
+/* bootstrap-adjustments */
+.row{
+    margin: 5%;
+}
+
+
+@media (max-width: 1700px){
+      .bee-img{
+      	width: 5rem;
+      }
+}

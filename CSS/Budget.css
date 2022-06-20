@@ -1,0 +1,488 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.budget-core-content{
+  background-image: url("../Images/Wood_backgroiund_image-2.png");
+  background-size: cover;
+  color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  padding: 1% 0.5%;
+  box-shadow: 0px 0px 8px 10px #312f17;
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+}
+
+.budget-core-content-2{
+  background-image: url("../Images/Wood_backgroiund_image-2.png");
+  background-size: cover;
+  color: white;
+  opacity: 0.95;
+  border-radius: 20px;
+  padding: 1% 0.5%;
+  box-shadow: 0px 0px 8px 10px #75E6DA;
+  margin-top: 1.5%;
+}
+
+
+.row{
+  margin: 0.5%;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+
+#Budget-core{
+    margin: 0% 5%;
+    text-align: center;
+}
+
+#Budget-core-2{
+  padding: 0% 5%;
+  text-align: center;
+}
+
+.common-bg{
+    background-image: url("../Images/blue-granite.jpg");
+    padding-bottom:1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/***************** container-fluid-1 *****************/
+
+
+
+
+/**** budget butons ****/
+
+
+.Budget-Buttons-income{
+  padding: 5%;
+  border-color: #00ab66;
+  border-width: 10px;
+  color: White;
+  background-color: #00ab66;
+  border-radius: 5%;
+  border-style: solid;
+  box-shadow: 2px 2px 5px #6E260E;
+  width: 70%;
+}
+
+.Budget-Buttons-income:hover{
+  background-color: 		#F28C28;
+  border-color: 		#F28C28;
+  box-shadow: 0px 0px 10px 2px 	#F28C28;
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px;
+}
+
+.Budget-Buttons-expence{
+  padding: 5%;
+  border-color: #C41E3A;
+  color: White;
+  background-color: #C41E3A;
+  border-radius: 5%;
+  border-width: 10px;
+  border-style: solid;
+    width: 70%;
+}
+
+.Budget-Buttons-expence:hover{
+  background-color: 		#880808;
+  border-color: 		#880808;
+  box-shadow: 0px 0px 8px 1px #880808;
+  transition: 0.4s;
+}
+
+
+
+
+
+/* textbox */
+
+.input-income-text, .input-expence-text{
+  padding: 1%;
+  border-radius: 10px;
+  border:none;
+  box-shadow: 2px 2px 5px #6E260E;
+
+  width: 70%;
+  height: 75%;
+  background-color:	#FF8C00;
+  opacity: 0.9;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.drop-down,.normal-input-text{
+  padding: 1%;
+  border-radius: 10px;
+  border:none;
+  box-shadow: 2px 2px 5px #6E260E;
+  width: 55%;
+  color: black;
+  font-size: 1.8rem;
+  margin: 3%;
+}
+
+
+
+/* collapse boxes */
+
+#Income-collapse, #Expence-collapse{
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding: 2%;
+  border-radius: 30px;
+  margin: 3%;
+  box-shadow: 0px 0px 8px 6px #FFBF00;
+}
+
+/* radio boxes */
+
+.checkbox-des{
+  background-color: #FF8C00;
+  border-radius: 15px;
+  padding: 2%;
+  padding-top: 4%;
+  width: 100%;
+  margin: 1%;
+}
+.checkbox-des:hover{
+  box-shadow: 0px 0px 8px 4px  #E26310;
+  background-color: #44AF56;
+}
+.radio-label{
+  font-size: 1.5rem;
+}
+
+/* hide radio button */
+.isHidden {
+  display: none;
+}
+
+/* checking radio */
+.radio:checked + .checkbox-des{
+  background-color: #44AF56;
+}
+
+/* small row margin for radio buttons */
+.row-sm-margin{
+  margin: 0.5%;
+}
+
+
+
+
+/* progress bar */
+.progress{
+  margin: 1% 0;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid #29dfca;
+}
+
+
+
+/* publish buttons */
+.Budget-Buttons-publish{
+  padding: 1%;
+  padding-top: 2%;
+  font-variant: small-caps;
+  border-color: #00ab66;
+  border-width:2px;
+  color: White;
+  background-color: #00ab66;
+  border-radius: 5%;
+  border-style: solid;
+  box-shadow: 2px 2px 5px #6E260E;
+  width: 40%;
+  margin: 1%;
+}
+
+
+
+/* tables */
+
+table{
+  background-color: none;
+  width: 95%;
+  border: 3px solid 	#556B2F;
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+td{
+  font-size: 1rem;
+  border: 3px solid 	#556B2F;
+  border-radius: 10px;
+}
+
+th{
+  color:#045F5F;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    border: 3px solid 	#556B2F;
+    border-radius: 10px;
+}
+
+
+/* history tab */
+.History{
+  background-image: url("../Images/history-background.jpg");
+  opacity: 0.8;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 8px 2px #312f17;
+  color:  #552A6A;
+}
+
+.scroll{
+  height: 210px;
+}
+
+/* inc-exp-ratio */
+.inc-exp-ratio{
+  padding-top: 5%;;
+}
+
+
+
+#Err_Msg{
+  color: #EB212E;
+  font-size: 45px;
+  text-shadow:  2px 2px 4px white;
+}
+
+
+
+
+
+
+
+/* common border */
+.common-box-border{
+    border: 5px solid #FFBF00;
+    border-radius: 15px;
+}
+
+.Core-Dist{
+      margin: 3% 0;
+}
+
+.Expense-main{
+  padding: 2% 4%;
+  margin: 2% 1%;
+}
+
+
+/* income-expense-dist and history */
+.core-first-row{
+    margin: 2% 1%;
+    padding: 2% 1%;
+}
+
+/* income-dist */
+.core-second-row{
+    padding: 0 8%;
+    margin: 2% 1%;
+}
+
+/* graph row */
+.core-row-third{
+    margin: 0;
+}
+
+ /* graph desgn */
+ .core-row-third.div{
+   width: 5%;
+ }
+
+/* base of graph */
+.graph-base{
+    margin: 0;
+    border:2px solid #FFBF00;
+    height: 500px;
+    width: 0;
+    padding: 0;
+}
+
+/* the row with the index for graph */
+.core-row-fifth{
+    border:4px solid #FFBF00;
+    border-radius:10px;
+}
+
+/* individual index rows */
+.core-row-sixth{
+  margin: 0;
+  padding-top: 2%;
+}
+
+ /* div elements that act as bars of bar graph */
+ .core-graph-row{
+   margin: 2.8% 1%;
+ }
+
+
+
+ /* divs indide the div of core-graph-row */
+ .expense-core-bar{
+       padding:0;
+       height: 35px;
+       width: 0px;
+       border-radius: 10px;
+       transition: 1.2s;
+       padding: auto 0;
+  }
+
+  .expense-dist-label-border{
+    border-radius: 10px;
+    padding:8%;
+  }
+
+
+
+/***************** container-fluid-2 *****************/
+
+.common-box-border-2{
+  border: 5px solid #FFBF00;
+  border-radius: 15px;
+  margin: 1%;
+  height: 90%;
+  padding: 4%;
+}
+.rem-balance-amt{
+    margin: 7% 0 ;
+    font-size: 4rem;
+    animation-name: none;
+    animation-duration: 2.5s;
+}
+
+@keyframes blink {
+    0%{text-shadow: none}
+    50%{text-shadow: 0 0 12px white}
+    100%{text-shadow: none}
+}
+
+.max-exp{
+    margin: 2% 0;
+    font-size: 1.5
+    rem;
+    color: #D21F3C;
+    font-weight: 700px;
+}
+
+.progress-daily{
+  margin: 0 auto;
+  width: 95%;
+  padding: 0;
+}
+
+.scroll-max-exp{
+  height: 100px;
+}
+
+
+
+.distribution-show-btn{
+    margin: 1% 0 0;
+    width: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    background: transparent;
+}
+
+.pre-collapse-div{
+  height: 4%;
+}
+
+
+/* footer */
+
+footer{
+      background: linear-gradient(180deg, #eec33d, #C58F00 );
+      padding: 0.5%;
+      color: white;
+}
+
+p{
+  margin: 0;
+}
+
+
+@media (max-width: 992px){
+
+            #Budget-core{
+                margin: 3% 2%;
+                text-align: center;
+            }
+
+            .Budget-Buttons-income{
+              padding: 6%;
+              margin: 2% 0;
+            }
+
+            .Budget-Buttons-expence{
+              padding: 6%;
+              margin: 2% 0;
+            }
+
+            .checkbox-des{
+                padding: 1%;
+                margin: 3% auto;
+            }
+
+            .rem-balance-amt{
+                margin: 10% 0 10%;
+                font-size: 2rem;
+            }
+}
+
+@media (max-width: 1400px) and (min-width: 992px){
+
+          .Budget-Buttons-income{
+            padding: 6%;
+            margin: 2% 0;
+          }
+
+          .Budget-Buttons-expence{
+            padding: 6%;
+            margin: 2% 0;
+          }
+
+          #Budget-core{
+              margin: 3% 2%;
+              text-align: center;
+          }
+
+          .rem-balance-amt{
+              margin: 10% 0 10%;
+              font-size: 4rem;
+          }
+
+}
+
+@media (max-width: 1700px) and (min-width:1400px){
+
+
+          #Budget-core{
+              margin: 3% 2%;
+              text-align: center;
+          }
+
+          .rem-balance-amt{
+              margin: 10% 0 10%;
+              font-size: 4rem;
+          }
+}
