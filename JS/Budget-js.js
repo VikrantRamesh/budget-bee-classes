@@ -33,7 +33,7 @@ class income_class{
 			this.amt += amount;
 			bal.balance += amount;
 			bal.total_Income += amount;
-			document.getElementById("Balance-Budget").innerHTML = bal.balance + " ₹";
+			document.getElementById("Balance-Budget").innerHTML = "₹ "+ bal.balance ;
 		}
 
 		reset_forms(){
@@ -328,7 +328,7 @@ class daily_limit{
 	    document.getElementById("rem-balance-amt").innerHTML = "₹"+balance;
 
 	    if (balance <= 0){
-	        document.getElementById("rem-balance-amt").style.color = "#D21F3C";
+	        document.getElementById("rem-balance-amt").style.color = "#FF2E2E";
 	    }
 	    else{
 	      document.getElementById("rem-balance-amt").style.color = "white";
@@ -340,35 +340,37 @@ class daily_limit{
 	        var max_exp_text = ""
 
 	        if (max == food.amt){
-	            max_exp_text += "<br>Food: " + max +"₹";
+	            max_exp_text += "<br>Food: ₹" + max +"₹";
 	        }
 	        if (max == health.amt){
-	            max_exp_text += "<br>Health: "+ max+"₹";
+	            max_exp_text += "<br>Health: ₹"+ max;
 	        }
 	        if (max == transport.amt){
-	            max_exp_text += "<br>Transport: "+ max+"₹";
+	            max_exp_text += "<br>Transport: ₹"+ max;
 	        }
 	        if (max == clothes.amt){
-	            max_exp_text += "<br>Clothes: "+ max+"₹";
+	            max_exp_text += "<br>Clothes: ₹"+ max;
 	        }
 	        if (max == taxes.amt){
-	            max_exp_text += "<br>taxes: "+ max+"₹";
+	            max_exp_text += "<br>taxes: ₹"+ max;
 	        }
 	        if (max == entertainment.amt){
-	            max_exp_text += "<br>Entertainment: "+ max+"₹";
+	            max_exp_text += "<br>Entertainment: ₹"+ max;
 	        }
 	        if (max == sports.amt){
-	            max_exp_text += "<br>Sports: "+ max+"₹";
+	            max_exp_text += "<br>Sports: ₹"+ max;
 	        }
 	        if (max == eating.amt){
-	            max_exp_text += "<br>Eating: "+ max+"₹";
+	            max_exp_text += "<br>Eating: ₹"+ max;
 	        }
 	        if (max == toiletry.amt){
-	            max_exp_text += "<br>Toiletry: "+ max+"₹";
+	            max_exp_text += "<br>Toiletry: ₹"+ max;
 	        }
 					document.getElementById("max_exp_text").innerHTML = max_exp_text;
 			}
 		 document.getElementById("rem-balance-amt").style.animationName = "none";
+		 document.getElementById("balance-ani").style.animationName = "none";
+
 			if(this.today_Limit - bal.total_Expence > 0){
 							// changing progress bar
 							document.getElementById("Daily-exp-bar-rem").style.width = ((this.today_Limit-bal.total_Expence)/this.today_Limit) *100 + "%";
@@ -387,8 +389,8 @@ class daily_limit{
 
 
 	Balance_alert(){
-			window.scrollTo(0, document.body.scrollHeight);
 		  document.getElementById("rem-balance-amt").style.animationName = "blink";
+			document.getElementById("balance-ani").style.animationName = "innerborder";
 	}
 
 }
@@ -547,6 +549,9 @@ function exp_limit_text(){
 	if(today_Limit === ""){
 				today_Limit = document.getElementById("select_limit").value;
 	}
+
+	//clear the custom input text box
+	document.getElementById("custom_limit").value="";
 
 	today_Limit = parseInt(today_Limit);
 
